@@ -8,22 +8,22 @@ import PlanetNavPage from "./pages/PlanetNavPage";
 import MainPage from "./pages/MainPage";
 import Data from "./data.json";
 
-export const MyContext = createContext("");
+export const MyContext = createContext<any>("");
 
 function App() {
   const navigate = useNavigate();
 
-  const [indexP, setIndexP] = useState(0);
-  const [isShown, setIsShown] = useState(false);
-  const [isActive1, setIsActive1] = useState("0.5");
-  const [isActive2, setIsActive2] = useState("0.5");
-  const [isActive3, setIsActive3] = useState("0.5");
-  const [planetImg, setPlanetImg] = useState(true);
-  const [isOpacity, setIsOpacity] = useState(false);
+  const [indexP, setIndexP] = useState<any>(0);
+  const [isShown, setIsShown] = useState<boolean>(false);
+  const [isActive1, setIsActive1] = useState<string>("0.5");
+  const [isActive2, setIsActive2] = useState<string>("0.5");
+  const [isActive3, setIsActive3] = useState<string>("0.5");
+  const [planetImg, setPlanetImg] = useState<boolean>(true);
+  const [isOpacity, setIsOpacity] = useState<boolean>(false);
 
-  const [isClicked1, setIsClicked1] = useState(false);
-  const [isClicked2, setIsClicked2] = useState(false);
-  const [isClicked3, setIsClicked3] = useState(false);
+  const [isClicked1, setIsClicked1] = useState<boolean>(false);
+  const [isClicked2, setIsClicked2] = useState<boolean>(false);
+  const [isClicked3, setIsClicked3] = useState<boolean>(false);
 
   
   

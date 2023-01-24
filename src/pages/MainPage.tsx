@@ -10,7 +10,7 @@ export default function MainPage() {
 
  
 
-const context = useContext(MyContext);
+const context = useContext<any>(MyContext);
 
 // useEffect(() => {
 //   if(context.indexP == 0){

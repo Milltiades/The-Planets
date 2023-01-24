@@ -8,12 +8,12 @@ import Data from "../data.json";
 import PlanetNavPage from "./PlanetNavPage";
 
 export default function PlanetSummary() {
-  const context = useContext(MyContext);
+  const context = useContext<any>(MyContext);
 
-  const [pixelT, setPixelT] = useState("");
-  const [pixelD, setPixelD] = useState("");
-  const [pixel, setPixel] = useState("");
-  const [tabletSize, setTabletSize] = useState(1);
+  const [pixelT, setPixelT] = useState<string>("");
+  const [pixelD, setPixelD] = useState<string>("");
+  const [pixel, setPixel] = useState<string>("");
+  const [tabletSize, setTabletSize] = useState<number>(1);
 
   useEffect(() => {
     WindowSize();
